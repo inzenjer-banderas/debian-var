@@ -40,15 +40,17 @@ readonly G_VARISCITE_PATH="${DEF_BUILDENV}/variscite"
 
 ## LINUX kernel: git, config, paths and etc
 readonly G_LINUX_KERNEL_SRC_DIR="${DEF_SRC_DIR}/kernel"
-readonly G_LINUX_KERNEL_GIT="https://github.com/varigit/linux-imx.git"
+readonly G_LINUX_KERNEL_GIT="git@github.com:inzenjer-banderas/linux-imx.git"
 readonly G_LINUX_KERNEL_BRANCH="imx_4.9.11_1.0.0_ga-var01"
 readonly G_LINUX_KERNEL_REV="930b72fd05ac3f6c199ddd8cb9d24ac2a8296883"
 readonly G_LINUX_KERNEL_DEF_CONFIG='imx_v7_var_defconfig'
-readonly G_LINUX_DTB='imx6dl-var-som-cap.dtb imx6dl-var-som-res.dtb imx6dl-var-som-solo-cap.dtb imx6dl-var-som-solo-res.dtb imx6dl-var-som-solo-vsc.dtb imx6dl-var-som-vsc.dtb imx6q-var-dart.dtb imx6q-var-som-cap.dtb imx6q-var-som-res.dtb imx6q-var-som-vsc.dtb imx6qp-var-som-cap.dtb imx6qp-var-som-res.dtb imx6qp-var-som-vsc.dtb'
+#readonly G_LINUX_DTB='imx6dl-var-som-cap.dtb imx6dl-var-som-res.dtb imx6dl-var-som-solo-cap.dtb imx6dl-var-som-solo-res.dtb imx6dl-var-som-solo-vsc.dtb imx6dl-var-som-vsc.dtb imx6q-var-dart.dtb imx6q-var-som-cap.dtb imx6q-var-som-res.dtb imx6q-var-som-vsc.dtb imx6qp-var-som-cap.dtb imx6qp-var-som-res.dtb imx6qp-var-som-vsc.dtb'
+
+readonly G_LINUX_DTB='imx6q-var-som-res.dtb'
 
 ## uboot
 readonly G_UBOOT_SRC_DIR="${DEF_SRC_DIR}/uboot"
-readonly G_UBOOT_GIT="https://github.com/varigit/uboot-imx.git"
+readonly G_UBOOT_GIT="git@github.com:inzenjer-banderas/uboot-imx.git"
 readonly G_UBOOT_BRANCH="imx_v2017.03_4.9.11_1.0.0_ga_var01"
 readonly G_UBOOT_REV="466898df5360675516bf1f014e5d48e507ae5c95"
 readonly G_UBOOT_DEF_CONFIG_MMC='mx6var_som_sd_config'
